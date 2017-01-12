@@ -1,0 +1,10 @@
+<div>
+    <select size="6" class="form-control" ng-model="x.patient_id" required>
+<option ng-repeat="x in patients" value="{{x.patient_id}}">{{x.firstname}} by {{x.lastname}}</option>
+                    	</select>
+
+</div>
+<br><br>
+<button class="btn btn-danger" ng-click="deletePatient()" customAlert>Delete<span class="glyphicon glyphicon-remove"></span></button>
+
+</div>

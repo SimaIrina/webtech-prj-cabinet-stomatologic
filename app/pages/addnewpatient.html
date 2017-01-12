@@ -1,0 +1,25 @@
+<div>
+    <!--acum facem pagina html pt a putea adauga un pacient pt asta vom avea nevoie de nu=iste tabele / formulare )-->
+	<h1>Add a new patient</h1>
+	<div class="form-group">
+		<form action="/patients/" method="post" name="addForm">
+		    <!--Prima data pt un pacient va fi important sa isi puna in mod OBLIGATORIU numele si prenumele-->
+		    <label for="firstname">First Name</label>
+			<input type="text" class="form-control" id="firstname" name="firstname" ng-model="firstname" required/>
+			<p><span ng-show="addForm.firstname.$touched && addForm.firstname.$invalid">The firstname is required.</span></p>
+			<label for="lastname">Last Name</label>
+			<input type="text" class="form-control" id="lastname" name="lastname" ng-model="lastname" required/>
+			<p><span ng-show="addForm.lastname.$touched && addForm.lastname.$invalid">The lastname is required.</span></p>
+			<!--pentru ca sut prea multe persoane care se identifica diferit am optat pentru o varainta mai simpla din care se pot alege variantele-->
+			<label for="sex">Sex</label>
+			<select class="form-control" id="sex" name="sex">
+				<option>Male</option>
+				<option>Female</option>
+			</select>
+			<!--pentru varsta am pus numbers-only restriction-->
+			<label for="age">age</label>
+			<input type="text" class="form-control" id="age" name="age" ng-model="val" numbers-only></select>
+			<input type="submit" value="Add" />
+		</form>
+	</div>
+</div>

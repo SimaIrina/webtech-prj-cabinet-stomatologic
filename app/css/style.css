@@ -1,0 +1,29 @@
+body{
+	margin:10px;
+	font-family: "Courier New Lucida Console", Palatino, serif;
+	font-variant: small-caps;
+}
+#moto {
+    color: #1a0438;
+    text-align: center;
+	display: block;
+}
+
+#id_menu a{
+	font-size:25px;
+	color:#1c0101;
+}
+
+.loaded_module{
+	padding:20px;
+}
+.loaded_module > h1{
+	font-size : 17px;
+	font-weight:bold;
+	color:#632538;
+}
+
+.form-group input,select{
+	max-width:389px;
+}
+

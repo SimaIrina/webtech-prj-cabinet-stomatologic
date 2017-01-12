@@ -1,0 +1,47 @@
+<html>
+
+<head>
+  <title>Clinica Stomatologica</title>
+  <meta charset="utf-8">
+  <!--Angluar js ca la prof in curs--> 
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route.min.js"></script>
+
+    <!--Script pt js-ul meu-->
+  <script src="js/app.js"></script>
+<!--Pt ca aplicatia noastra sa se seze in pagia sau sa fie mobile friendly-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--Folosim bootstrap ca aplicatia sa arate mai frumos https://www.bootstrapcdn.com/    -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
+  
+  <!--My css-->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+<!--src in loc de rel pt ca e js-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!--?? hero banner?-->
+  <div class="jumbotron">
+    <img src="http://www.doctoruldedinti.info/wp-content/uploads/2014/07/pacient-la-stomatolog.jpg" width="250px" height="230px" float="left" display="inline-block" />
+    <h1 id="moto" display="inline-block">a healthy person is a happy person</h1>
+  </div>
+
+  <div ng-app="myApp">
+    <ul class="nav nav-list" id="id_menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#viewpatients">View patients</a></li>
+      <li><a href="#addnewpatient">Add a new patient</a></li>
+      <li><a href="#deletepatients">Delete patients</a></li>
+      <li><a href="#editpatients">Edit patients</a></li>
+     <!--??-->
+     
+    </ul>
+    <!--Absolute naming-->
+    <div ng-view></div>
+ 
+  </div>
+</body>
+
+</html>
